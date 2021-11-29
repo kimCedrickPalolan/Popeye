@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    tools:context=".Survey4">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="655dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/typeTv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interviewer's Name:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/personel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTE: For 0 to 11 months old."
+                android:textColor="#FF0049"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="19. Where was ___ delivered?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q19"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTE: For 0 to 11 months old."
+                android:textColor="#FF0049"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20. Who attended in the delivery of ___?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q20"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTE: For 0 to 11 months old."
+                android:textColor="#FF0049"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="21. What is the last vaccine recieved by ___?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTE: For WOMEN 10 to 54 years."
+                android:textColor="#FF003C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22-A. how many pregnancies does ___ had?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q22Birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView104"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTE: For WOMEN 10 to 54 years."
+                android:textColor="#FF003C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22-B. How many children are still living?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q22Living"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTE: For WOMEN 10 to 54 years."
+                android:textColor="#FF003C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23. What family planning method does ___ and partner currently use?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q23"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTE: For WOMEN 10 to 54 years."
+                android:textColor="#FF003C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24. If using Family Planning, where did thet obtain the Family Planning method?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q24"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25-A. Does ___ and partner intend to use Family Planning method?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q25A"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25-B. If yes, What method?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q25B"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTE: for all household member"
+                android:textColor="#FF0033"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26. What is the primary health insurance ___ have?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q26"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="27. What facility dod ___ visited in the past 12 months?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q27"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="28. What is the reason ofr the visit in the health facility?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q28"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="29. Is there a member of the HouseHold that has any disability? what is the Disability?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C. HEALTH INFORMATION"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveHealthInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toEndOf="@+id/saveHealthInfo"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

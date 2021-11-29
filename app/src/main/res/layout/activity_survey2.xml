@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E8F5E9"
+    tools:context=".Survey2">
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/save"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="534dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/typeTv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interviewer's Name:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/personel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/householdmemberTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Who are the Member of this HouseHold starting from the household head."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint=" SURNAME, FIRSTNAME MIDDLE NAME OR MIDDLE INITIAL"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/relationshiptoheadTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Relationship to household head."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/sexTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. SEX."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/ageTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Age of last birthday."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/birthdayTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. date of birth : "
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CDE8FA"
+                android:text="pick a date"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/birthplaceTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Place of birth:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="    city/province"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:id="@+id/nationalityTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Nationality : "
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/q7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="  filipino/non-filipino"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(if non-filipino, write your nationality)"
+                android:textColor="#E13131"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/maritalstatusTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. What's current Marital Status?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/q8"
+                android:layout_width="match_parent"
+                android:layout_height="27sp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/religionTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. What's the religion?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/q9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ethnicityTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. What's Ethnicity?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/q10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView96"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note: for 5 years and above."
+                android:textColor="#CD2C2C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11. Highest Level of education completed?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/q11"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+
+            <TextView
+                android:id="@+id/textView97"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note for 3-24 years old only."
+                android:textColor="#E43A3A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12. Currently enrolled?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/q12"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView98"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note for 3-24 years old only."
+                android:textColor="#E43A3A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13. What type of school?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/q13"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note for 3-24 years old only."
+                android:textColor="#E43A3A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14. In what barangay and city/municipality's currently attending school?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/q14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="baragay and city/municipality"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15. barangay?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/brgy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="A. Demographic Characteristics"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="list of household in this order:"
+            android:textColor="#CD0101"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Head"
+            android:textColor="#CD0101"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Spouse of Head"
+            android:textColor="#CD0101"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Never married children from oldest to youngest"
+            android:textColor="#CD0101"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Ever marriedchildren, the spouse and their families from oldest to youngest"
+            android:textColor="#B30000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Other relatives"
+            android:textColor="#CD0101"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Nonrelatives"
+            android:textColor="#CD0101"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

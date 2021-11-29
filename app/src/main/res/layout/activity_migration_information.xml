@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    tools:context=".migrationInformation">
+
+    <ScrollView
+        android:id="@+id/scrollView7"
+        android:layout_width="604dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/typeTv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interviewer's Name:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/personel5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="33-A. In what barangay and city/municipality did ___ reside five(5) years ago?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q33Brgy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="Barangay"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#837B7B" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="33-B. City/Municipality"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q33City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="City/Municipality"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#A6A0A0" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="34-A.  In what barangay and city/municipality did ___ reside Six(6) years ago?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q34Brgy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="Barangay"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="34-B. City/Municipality"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q34City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="City/Municipality"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="35-A. How long is ___ been staying in this barangay?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q35Month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="No. of Months"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="35B. in years."
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q35Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:hint="No. of Years"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="36. Indicate if Non-Migrant, Migrant or Transient."
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q36"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="37. When did ___ transfer in this barangay?"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/q37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CDE8FA"
+                android:text="pick a date"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="38-A. What are the reasons why ___ left his/her previous residence?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q38A"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="38-B. What are the reasons why ___ left his/her previous residence?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q38B"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="38-C. What are the reasons why ___ left his/her previous residence?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q38C"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="39-A. Does ___ plan to return to previous residence? if yes answer 39-B."
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q39A"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="39-B. When? if not write 99."
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q39B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                tools:text="99" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="40-A. What are the reasons/why ___ transfer in this barangay?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q40A"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="40-B. What are the reasons/why ___ transfer in this barangay?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q40B"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="40-C. What are the reasons/why ___ transfer in this barangay?"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/q40C"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#CDE8FA" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="41. Until when does ___ intend to stay in this barangay?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/q41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D5DCFF"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E. Migration Information"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView7"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

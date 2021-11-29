@@ -1,0 +1,365 @@
+<resources>
+    <string name="app_name">Popeye</string>
+    <string name="next">Next</string>
+    <string name="left_button">left_button</string>
+    <string name="baseline_cencus_for_the_establishment_of_registry_of_barangay_inhabitants_and_migrants_rbim">baseline_cencus_for_the_establishment_of_registry_of_barangay_inhabitants_and_migrants_rbim</string>
+    <string name="a_identification">a_identification</string>
+
+    <string name="title_activity_economic">economicActivity</string>
+
+    <string name="first_fragment_label">First Fragment</string>
+
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string-array name="relationship">
+        <item></item>
+        <item>Head</item>
+        <item>Spouse</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Stepson</item>
+        <item>Stepdaughter</item>
+        <item>Son-in-law</item>
+        <item>Daughter-in-law</item>
+        <item>Grandson</item>
+        <item>Granddaughter</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Sister</item>
+        <item>Uncle</item>
+        <item>Aunt</item>
+        <item>Nephew</item>
+        <item>Niece</item>
+        <item>Other Relative</item>
+        <item>Non-Relative</item>
+        <item>Boarder</item>
+        <item>Domestic Helper</item>
+    </string-array>
+    <string-array name="SEX">
+        <item></item>
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+    <string-array name="marital">
+        <item></item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Living-in</item>
+        <item>Widowed</item>
+        <item>Separated</item>
+        <item>Divorced</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="education">
+        <item></item>
+        <item>No education</item>
+        <item>Pre-school</item>
+        <item>Elementary level</item>
+        <item>Elementary Graduate</item>
+        <item>High school level</item>
+        <item>High school graduate</item>
+        <item>Junior HS</item>
+        <item>Junior HS graduate</item>
+        <item>Senior HS</item>
+        <item>Senior HS graduate</item>
+        <item>Vocational/Tech</item>
+        <item>College level</item>
+        <item>College graduate</item>
+        <item>Post graduate</item>
+    </string-array>
+    <string-array name="type">
+        <item></item>
+        <item>Household</item>
+        <item>Institutional Living Quarter</item>
+    </string-array>
+
+    <string-array name="level">
+        <item></item>
+        <item>Pre-school</item>
+        <item>Elementary</item>
+        <item>Hunior Highschool</item>
+        <item>Senior Highschool</item>
+        <item>Vocational/Technichal</item>
+        <item>College/University</item>
+    </string-array>
+
+    <string-array name="currentEnrolled">
+        <item></item>
+        <item>Yes, public</item>
+        <item>yes, private</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="sourceOfIncome">
+        <item></item>
+        <item>Employment</item>
+        <item>Business</item>
+        <item>Remittance</item>
+        <item>Investment</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="statusOfWork">
+        <item></item>
+        <item>Permanent work</item>
+        <item>Casual work</item>
+        <item>Contractual work</item>
+        <item>Individual owned business</item>
+        <item>Shared/partnership business</item>
+        <item>Corporate business</item>
+    </string-array>
+
+    <string-array name="placeOfDelivery">
+        <item></item>
+        <item>Public Hospital</item>
+        <item>Private Hospital</item>
+        <item>lying-in Clinic</item>
+        <item>Home</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="personAssistedDelivery">
+        <item></item>
+        <item>doctor</item>
+        <item>Nurse</item>
+        <item>Midwife</item>
+        <item>Hilot</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="fpMethod">
+        <item></item>
+        <item>Female Sterilization/ligation</item>
+        <item>Male Sterilazation/vasectomy</item>
+        <item>IUD</item>
+        <item>Injectable</item>
+        <item>Implants</item>
+        <item>Pill</item>
+        <item>Condom</item>
+        <item>Modern Natural FP</item>
+        <item>locational Amenorrhea Method/LAM</item>
+        <item>traditional</item>
+        <item>NONE</item>
+    </string-array>
+
+    <string-array name="sourceOfFP">
+        <item></item>
+        <item>Government Hospital</item>
+        <item>RHU/Health Center</item>
+        <item>Brgy. Health Station</item>
+        <item>Private Hospital</item>
+        <item>Pharmacy</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="healthInsurance">
+        <item></item>
+        <item>PhilHealth Paying Member</item>
+        <item>PhilHealth Dependent of Paying Member</item>
+        <item>PhilHealth indigent Member</item>
+        <item>PhilHealth dependent of Indigent Member</item>
+        <item>GSIS</item>
+        <item>SSS</item>
+        <item>Private/HMO</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="familyVisited">
+        <item></item>
+        <item>Government Hospital</item>
+        <item>RHU/Health Center</item>
+        <item>Brgy. Health Station</item>
+        <item>Private Hospital</item>
+        <item>Private Clinic</item>
+        <item>Pharmacy</item>
+        <item>Hilot/Herbalist</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="reasonOfVisit">
+        <item></item>
+        <item>Sick/Injured</item>
+        <item>Prenatal/Postnatal</item>
+        <item>Gave Birth</item>
+        <item>Dental</item>
+        <item>Medical Check-up</item>
+        <item>Medical Requirement</item>
+        <item>NHTS/CCT/4Ps requirement</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="yesNo">
+        <item></item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="soloParent">
+        <item></item>
+        <item>Registered Solo Parent</item>
+        <item>Non-Solo Parent</item>
+        <item>UnregisteredSolo Parent</item>
+    </string-array>
+    #q36
+    <string-array name="typeOfResident">
+        <item></item>
+        <item>Non-Migrant</item>
+        <item>Migrant</item>
+        <item>Transient</item>
+    </string-array>
+    #38
+    <string-array name="reasonForLeaving">
+        <item></item>
+        <item>Lack of Employment</item>
+        <item>Perception of Better Income in Other Place</item>
+        <item>Schooling</item>
+        <item>Presence of Relatives and Friends in Other Place</item>
+        <item>Employment/Job Relocation</item>
+        <item>Disaster-related Relocation</item>
+        <item>Retirement</item>
+        <item>To Live with Parents</item>
+        <item>To Live with Children</item>
+        <item>Marriage</item>
+        <item>Annulment/Divorce/Separation</item>
+        <item>Communicating Related Reasons</item>
+        <item>Health-Related Reason</item>
+        <item>Place and Security</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="reasonForTransfering">
+        <item></item>
+        <item>Availability of Jobs</item>
+        <item>Higher Wage</item>
+        <item>Presence of Schools or University</item>
+        <item>Presence of Relatives and Friends in Other Place</item>
+        <item>Housing</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="skill">
+        <item></item>
+        <item>Refrigeration and Airconditioning</item>
+        <item>Automotive/Heavy equipment servicing</item>
+        <item>Metal worker</item>
+        <item>Building wiring installation</item>
+        <item>Heavy equipment operation</item>
+        <item>Plumbing</item>
+        <item>Welding</item>
+        <item>Carpentry</item>
+        <item>Baking</item>
+        <item>Dress making</item>
+        <item>linguist</item>
+        <item>Computer Graphics</item>
+        <item>Painting</item>
+        <item>Beauty care</item>
+        <item>Commercial cooking</item>
+        <item>Housekeeping</item>
+        <item>Massage Therapy</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="q45q46">
+        <item></item>
+        <item>Rent-Free without consent of owner</item>
+        <item>Rent-Free with consent of owner</item>
+        <item>Rented</item>
+        <item>Owned/being amortize</item>
+    </string-array>
+
+    <string-array name="q47">
+        <item></item>
+        <item>None</item>
+        <item>Oil(vegetables, animals, others)</item>
+        <item>Liquefied petroleum gas(LPG)</item>
+        <item>Kerosene(gaas)</item>
+        <item>electricity</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="q48">
+        <item></item>
+        <item>None</item>
+        <item>Wood</item>
+        <item>Charcoal</item>
+        <item>Liquefied petroleum gas(LPG)</item>
+        <item>Kerosene(gaas)</item>
+        <item>electricity</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="q49">
+        <item></item>
+        <item>Lake, river, rain, others</item>
+        <item>Dug well</item>
+        <item>Unprotected spring</item>
+        <item>Protected spring</item>
+        <item>Peddler</item>
+        <item>Tubed/Pipe shallow well</item>
+        <item>Shared tubed/pipe deep well</item>
+        <item>own use, tubed/pipe deep well</item>
+        <item>Shared/ faucet community water system</item>
+        <item>bottled water</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="q50A">
+        <item></item>
+        <item>Feeding to animals</item>
+        <item>Burying</item>
+        <item>Composting</item>
+        <item>Burning</item>
+        <item>Dumping individual pit(not burned)</item>
+        <item>Picked-up by garbage truck</item>
+    </string-array>
+
+    <string-array name="q50b">
+        <item></item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="q51">
+        <item></item>
+        <item>None</item>
+        <item>Open pit</item>
+        <item>Closed pit</item>
+        <item>Water-Sealed, other depository, shared</item>
+        <item>Water-Sealed, other depository, exclusive</item>
+        <item>Water-Sealed, sewer septic tank, shared</item>
+        <item>Water-Sealed, sewer septic tank, exclusive</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="q52">
+        <item></item>
+        <item>Single</item>
+        <item>Duplex</item>
+        <item>Closed pit</item>
+        <item>Multi-unit residential(3 units or more)</item>
+        <item>Commercial, industrial, agricultural</item>
+        <item>Institutional living quarter(hotel,hospital)</item>
+        <item>Other housing units(boat, cave, others</item>
+    </string-array>
+
+    <string-array name="q53">
+        <item></item>
+        <item>No walls</item>
+        <item>Makeshift/ salvaged/ improvised materials</item>
+        <item>Glass</item>
+        <item>Abestos</item>
+        <item>Bamboo/ sawali/ cogon/ nipa</item>
+        <item>Galvanized iron/aluminum</item>
+        <item>Half concrete/ brick/ stone and half wood</item>
+        <item>wood</item>
+        <item>concrete/ brick/ stone</item>
+        <item>others</item>
+    </string-array>
+
+</resources>

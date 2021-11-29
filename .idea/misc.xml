@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_community_tax_cert.xml" value="0.264" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_economic.xml" value="0.20854700854700856" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_migration_information.xml" value="0.4" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_question_for_household.xml" value="0.4" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_skills_dev.xml" value="0.4" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_socio_civic.xml" value="0.4" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_survey2.xml" value="0.264" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_survey3.xml" value="0.264" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/activity_survey4.xml" value="0.264" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/content_economic.xml" value="0.20854700854700856" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/fragment_first.xml" value="0.20854700854700856" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/fragment_second.xml" value="0.20854700854700856" />
+        <entry key="..\:/android project/Popeye/app/src/main/res/layout/login.xml" value="0.20854700854700856" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
