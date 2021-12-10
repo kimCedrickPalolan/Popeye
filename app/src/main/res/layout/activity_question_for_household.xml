@@ -38,23 +38,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/typeTv5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Interviewer's Name:"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/personel6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#D5DCFF"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#000000" />
-
-            <TextView
                 android:id="@+id/textView72"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

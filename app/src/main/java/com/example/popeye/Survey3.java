@@ -16,7 +16,7 @@ import java.util.Date;
 
 public class Survey3 extends AppCompatActivity  {
 
-    EditText etq15,etq18,etpersonel;
+    EditText etq15,etq18;
     Button btnsave,btnNext;
     DatabaseHelper db;
 
@@ -28,7 +28,6 @@ public class Survey3 extends AppCompatActivity  {
         db = new DatabaseHelper(Survey3.this);
         etq15 = (EditText)findViewById(R.id.q15);
         etq18 = (EditText)findViewById(R.id.q18);
-        etpersonel = (EditText)findViewById(R.id.personel2);
 
 
 
@@ -54,13 +53,12 @@ public class Survey3 extends AppCompatActivity  {
                 String q16 = sourceOfIncome.getSelectedItem().toString();
                 String q17 = statusOfWork.getSelectedItem().toString();
                 String q18 = etq18.getText().toString();
-                String personel = etpersonel.getText().toString();
                 String updated_at = "";
 //              #created at code
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String created_at = sdf.format(new Date());
 
-                if (db.addeconomic(q15,q16,q17,q18,created_at,updated_at,personel)) {
+                if (db.addeconomic(q15,q16,q17,q18,created_at,updated_at)) {
                     Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
 
                 } else {

@@ -17,14 +17,12 @@ import java.util.Date;
 public class communityTaxCert extends AppCompatActivity {
 
     Button save,next;
-    EditText etpersonel;
     DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_community_tax_cert);
-        etpersonel = findViewById(R.id.personel4);
 
         db = new DatabaseHelper(communityTaxCert.this);
 
@@ -47,12 +45,11 @@ public class communityTaxCert extends AppCompatActivity {
             public void onClick(View v) {
                 String etq42A = q42A.getSelectedItem().toString();
                 String etq42B = q42B.getSelectedItem().toString();
-                String personel = etpersonel.getText().toString();
                 String updated_at = "";
 //              #created at code
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String created_at = sdf.format(new Date());
-                if(db.addCommunityCert(etq42A,etq42B,created_at,updated_at,personel)){
+                if(db.addCommunityCert(etq42A,etq42B,created_at,updated_at)){
                     Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
 
                 }else{

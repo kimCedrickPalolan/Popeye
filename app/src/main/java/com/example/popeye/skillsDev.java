@@ -18,7 +18,7 @@ public class skillsDev extends AppCompatActivity {
 
     DatabaseHelper db;
     Button save,next;
-    EditText q43,etpersonel;
+    EditText q43;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,6 @@ public class skillsDev extends AppCompatActivity {
         setContentView(R.layout.activity_skills_dev);
         db = new DatabaseHelper(skillsDev.this);
         q43 = findViewById(R.id.q43);
-        etpersonel = findViewById(R.id.personel7);
 
         //      #spinner of question 36
         Spinner skill = (Spinner) findViewById(R.id.q44);
@@ -41,13 +40,12 @@ public class skillsDev extends AppCompatActivity {
             public void onClick(View v) {
                 String etq43 = q43.getText().toString();
                 String etq44 = skill.getSelectedItem().toString();
-                String personel = etpersonel.getText().toString();
                 String updated_at = "";
 //              #created at code
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String created_at = sdf.format(new Date());
 
-                if(db.getSkill(etq43,etq44,created_at,updated_at,personel)){
+                if(db.getSkill(etq43,etq44,created_at,updated_at)){
                     Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();

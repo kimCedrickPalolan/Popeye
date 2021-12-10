@@ -17,7 +17,7 @@ import java.util.Date;
 public class socioCivic extends AppCompatActivity {
 
     DatabaseHelper db;
-    EditText q32,etpersonel;
+    EditText q32;
     Button save, next;
 
     @Override
@@ -27,7 +27,6 @@ public class socioCivic extends AppCompatActivity {
         db = new DatabaseHelper(socioCivic.this);
 
         q32 = (EditText) findViewById(R.id.q32);
-        etpersonel = (EditText) findViewById(R.id.personel8);
 
 //      #place of delivery q30
         Spinner soloParent = (Spinner) findViewById(R.id.q30);
@@ -50,12 +49,11 @@ public class socioCivic extends AppCompatActivity {
                 String etq30 = soloParent.getSelectedItem().toString();
                 String etq31 = yesNo.getSelectedItem().toString();
                 String etq32 = q32.getText().toString();
-                String personel = etpersonel.getText().toString();
                 String updated_at = " ";
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String date = sdf.format(new Date());
 
-                if (db.addSocioCivic(etq30, etq31, etq32,date,updated_at,personel)) {
+                if (db.addSocioCivic(etq30, etq31, etq32,date,updated_at)) {
                     Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
