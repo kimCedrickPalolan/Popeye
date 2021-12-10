@@ -16,7 +16,7 @@ import java.util.Date;
 
 public class Survey4 extends AppCompatActivity {
     DatabaseHelper db;
-    EditText q21,q22A,q22B,q29,etpersonel;
+    EditText q21,q22A,q22B,q29;
     Button saveHealthInfo,next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,6 @@ public class Survey4 extends AppCompatActivity {
         q22A =(EditText) findViewById(R.id.q22Birth);
         q22B =(EditText) findViewById(R.id.q22Living);
         q29 =(EditText) findViewById(R.id.q29);
-        etpersonel =(EditText) findViewById(R.id.personel3);
 
 //      #place of delivery q19
         Spinner placeOfDelivery = (Spinner) findViewById(R.id.q19);
@@ -106,12 +105,11 @@ public class Survey4 extends AppCompatActivity {
                 String etq27 = familyVisited.getSelectedItem().toString();
                 String etq28 = reasonOfVisit.getSelectedItem().toString();
                 String etq29 = q29.getText().toString();
-                String personel = etpersonel.getText().toString();
                 String updated_at = " ";
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String date = sdf.format(new Date());
 
-                 if (db.addhealth_info(etq19,etq20,etq21,etq22A,etq22B,etq23,etq24,etq25A,etq25B,etq26,etq27,etq28,etq29,date,updated_at,personel)){
+                 if (db.addhealth_info(etq19,etq20,etq21,etq22A,etq22B,etq23,etq24,etq25A,etq25B,etq26,etq27,etq28,etq29,date,updated_at)){
                      Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
                  }else {
                      Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
