@@ -16,7 +16,7 @@ import java.util.Date;
 
 public class questionForHousehold extends AppCompatActivity {
 
-    EditText Q54A,Q54B,Q55A,Q55B,Q56A,Q56B,Q56C,Q57A,Q57B,Q57C,Q58A,Q58B,etpersonel;
+    EditText Q54A,Q54B,Q55A,Q55B,Q56A,Q56B,Q56C,Q57A,Q57B,Q57C,Q58A,Q58B;
     Button save,next;
     DatabaseHelper db;
 
@@ -38,7 +38,6 @@ public class questionForHousehold extends AppCompatActivity {
         Q57C = findViewById(R.id.q57C);
         Q58A = findViewById(R.id.q58A);
         Q58B = findViewById(R.id.q58B);
-        etpersonel = findViewById(R.id.personel6);
 
 
 
@@ -140,14 +139,13 @@ public class questionForHousehold extends AppCompatActivity {
                 String etq57C = Q57C.getText().toString();
                 String etq58A = Q58A.getText().toString();
                 String etq58B = Q58B.getText().toString();
-                String personel = etpersonel.getText().toString();
 
                 String updated_at = "";
 //              #created at code
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String created_at = sdf.format(new Date());
 
-                if(db.addQFH(etq45,etq46,etq47,etq48,etq49,etq50A,etq50B,etq51,etq52,etq53,etq54A,etq54B,etq55A,etq55B,etq56A,etq56B,etq56C,etq57A,etq57B,etq57C,etq58A,etq58B,created_at,updated_at,personel)){
+                if(db.addQFH(etq45,etq46,etq47,etq48,etq49,etq50A,etq50B,etq51,etq52,etq53,etq54A,etq54B,etq55A,etq55B,etq56A,etq56B,etq56C,etq57A,etq57B,etq57C,etq58A,etq58B,created_at,updated_at)){
                     Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();

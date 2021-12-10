@@ -20,7 +20,7 @@ import java.util.Date;
 public class home extends AppCompatActivity {
     private static final String TAG = "home";
     Button save, next, back, button;
-    EditText etprovince, etmunicipality, etbarangay, ethouseholdhead, etnameofrespondent, ettotalhouseholdmember, etaddress,etpersonel;
+    EditText etprovince, etmunicipality, etbarangay, ethouseholdhead, etnameofrespondent, ettotalhouseholdmember, etaddress;
     DatabaseHelper db;
     private TextView mDisplayDate,tvdate2;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
@@ -37,7 +37,6 @@ public class home extends AppCompatActivity {
         etnameofrespondent = findViewById(R.id.respondentname);
         ettotalhouseholdmember = findViewById(R.id.totalmember);
         etaddress = findViewById(R.id.address);
-        etpersonel = findViewById(R.id.personel);
         tvdate2=findViewById(R.id.q5);
 
         Spinner type = (Spinner) findViewById(R.id.ettype);
@@ -57,14 +56,13 @@ public class home extends AppCompatActivity {
                 String nameofrespondent = etnameofrespondent.getText().toString();
                 String householdtotal = ettotalhouseholdmember.getText().toString();
                 String address = etaddress.getText().toString();;
-                String personel = etpersonel.getText().toString();
                 String type1 = type.getSelectedItem().toString();
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String date = sdf.format(new Date());
 
                 String updated_at = "";
 
-               if (db.addBooklet( type1,province, municipality, barangay,address,nameofrespondent,householdhead, householdtotal,date,updated_at,personel)){
+               if (db.addBooklet( type1,province, municipality, barangay,address,nameofrespondent,householdhead, householdtotal,date,updated_at)){
                     Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
                     Intent registerIntent = new Intent(home.this, Survey2.class);
                     startActivity(registerIntent);

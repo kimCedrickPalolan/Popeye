@@ -33,7 +33,7 @@ public class Survey2 extends AppCompatActivity  {
     DatabaseHelper db;
     Button next,back,save;
     TextView tvDate;
-    EditText Q1,Q4,brgy,Q6,Q7,Q9,Q10,Q14,etpersonel;
+    EditText Q1,Q4,brgy,Q6,Q7,Q9,Q10,Q14;
 
 
 
@@ -54,7 +54,6 @@ public class Survey2 extends AppCompatActivity  {
         Q9 = (EditText)findViewById(R.id.q9);
         Q10 = (EditText)findViewById(R.id.q10);
         tvDate=findViewById(R.id.q5);
-        etpersonel=findViewById(R.id.personel1);
 
 
 
@@ -150,7 +149,6 @@ public class Survey2 extends AppCompatActivity  {
                 String etQ12 = Enrolled.getSelectedItem().toString();
                 String etQ13 = level.getSelectedItem().toString();
                 String etQ14 = Q14.getText().toString();
-                String personel = etpersonel.getText().toString();
 
 
                 String updated_at =  "";
@@ -159,7 +157,7 @@ public class Survey2 extends AppCompatActivity  {
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String created_at = sdf.format(new Date());
 
-                if (db.addDemographic(etQ1,etQ2,etQ3,etQ4,etQ5,etQ6,etQ7,etQ8,etQ9,etQ10,etQ11,etQ12,etQ13,etQ14,etbrgy,created_at,updated_at,personel)) {
+                if (db.addDemographic(etQ1,etQ2,etQ3,etQ4,etQ5,etQ6,etQ7,etQ8,etQ9,etQ10,etQ11,etQ12,etQ13,etQ14,etbrgy,created_at,updated_at)) {
                     Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();

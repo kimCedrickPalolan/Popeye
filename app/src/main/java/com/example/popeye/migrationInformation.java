@@ -25,7 +25,7 @@ public class migrationInformation extends AppCompatActivity {
 
     private static final String TAG = "migrationInformation";
     Button save,next;
-    EditText q33A,q33B,q34A,q34B,q35A,q35B,q37,q39A,q39B,q41,etpersonel;
+    EditText q33A,q33B,q34A,q34B,q35A,q35B,q37,q39A,q39B,q41;
     DatabaseHelper db;
     private TextView mDisplayDate1;
     private DatePickerDialog.OnDateSetListener mDateSetListener1;
@@ -45,7 +45,6 @@ public class migrationInformation extends AppCompatActivity {
         q35B = (EditText) findViewById(R.id.q35Year);
         q39B = (EditText) findViewById(R.id.q39B);
         q41 = (EditText) findViewById(R.id.q41);
-        etpersonel = (EditText) findViewById(R.id.personel5);
         tvDate=findViewById(R.id.q37);
         //      #spinner of question 36
         Spinner typeOfResident = (Spinner) findViewById(R.id.q36);
@@ -147,13 +146,12 @@ public class migrationInformation extends AppCompatActivity {
                 String etq40B = typeOfResident.getSelectedItem().toString();
                 String etq40C = typeOfResident.getSelectedItem().toString();
                 String etq41 = q41.getText().toString();
-                String personel = etpersonel.getText().toString();
 
                 String updated_at = "";
 //              #created at code
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 String created_at = sdf.format(new Date());
-                if (db.addMigrationInformation(etq33A, etq33B, etq34A, etq34B, etq35A, etq35B, etq36, etq37, etq38A, etq38B, etq38C, etq39A,etq39B, etq40A, etq40B, etq40C, etq41,created_at,updated_at,personel)) {
+                if (db.addMigrationInformation(etq33A, etq33B, etq34A, etq34B, etq35A, etq35B, etq36, etq37, etq38A, etq38B, etq38C, etq39A,etq39B, etq40A, etq40B, etq40C, etq41,created_at,updated_at)) {
                     Toast.makeText(getApplicationContext(), "Data Inserted", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
